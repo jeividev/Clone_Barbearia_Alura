@@ -1,0 +1,95 @@
+$background__button__send: #ffa500;
+$background__button__send-hover: #ff8c00;
+$color__button__send: #fff;
+
+main {
+    margin: 10px 0;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-contact label,
+.form-select {
+    margin: 10px 0;
+    width: 90%;
+}
+
+.form-contact label input[type="text"],
+.form-contact label input[type="email"],
+.form-contact label textarea {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.form-contact textarea {
+    height: 100px;
+}
+
+.form-select {
+    border: none;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-select .select-contact {
+    margin: 5px 0 0 10px;
+}
+
+.form-select select {
+    font-size: 15px;
+    width: 100px;
+    margin: 5px 0 0 10px;
+}
+
+.send {
+    align-self: flex-start;
+
+    background-color: $background__button__send;
+    color: $color__button__send;
+    font-size: 15px;
+
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    margin-left: 5%;
+
+    border: none;
+    border-radius: 10px;
+    transform: 400ms transform;
+}
+
+.send:hover {
+    background-color: $background__button__send-hover;
+    margin-left: 7%;
+    transform: scale(1.1);
+}
+
+.table-time {
+    align-self: flex-start;
+    margin: 20px 0 10px 5%;
+}
+
+.table-time thead {
+    background-color: #555;
+    color: #fff;
+}
+
+.table-time th,
+.table-time td {
+    border: 1px solid #000;
+    padding: 8px 15px;
+}

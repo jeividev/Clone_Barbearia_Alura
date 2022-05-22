@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+    <head>
+        <title>Produtos - Barbearia Alura</title>
+        <meta charset="UTF-8" />
 
-<head>
-    <title>Produtos - Barbearia Alura</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../CSS/style.css">
+        <meta name="viewport" content="width:device-width, initial-scale=1.0" />
 
-    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Public/CSS/clear.css" />
+        <link rel="stylesheet" href="../Public/CSS/general.css" />
+        <link rel="stylesheet" href="../Public/CSS/header.css" />
+        <link rel="stylesheet" href="../Public/CSS/produto.css" />
+        <link rel="stylesheet" href="../Public/CSS/footer.css" />
+    </head>
 
-</head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>
+                    <a href="../index.html">
+                        <img
+                            class="img-logo"
+                            src="../Public/img/imagens/logo.png"
+                            alt="Logo da barbearia composto por cabelo e barba, ao meio escrito 'Alura'"
+                        />
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">home</a></li>
+                        <li><a href="./produto.html">produto</a></li>
+                        <li><a href="./contato.html">contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<body>
+        <main>
+            <section class="products">
+                <div class="container">
+                    <ul class="list-product">
+                        <li class="itens-product">
+                            <h2>cabelo</h2>
+                            <p class="product__description product__description-1">Na tesoura ou máquina, como o cliente preferir</p>
+                            <p class="price">R$ 25,00</p>
+                        </li>
+                        <li class="itens-product">
+                            <h2>barba</h2>
+                            <p class="product__description product__description-2">Corte e desenho profissional de barba</p>
+                            <p class="price">R$ 18,00</p>
+                        </li>
+                        <li class="itens-product">
+                            <h2>cabelo + barba</h2>
+                            <p class="product__description product__description-3">Pacote completo de cabelo e barba</p>
+                            <p class="price">R$ 35,00</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
 
-    <header>
-        <div class="header">
-            <h1>
-                <a href="../index.html">
-                    <img class="img-logo" src="http://192.168.0.105:5500/img/imagens/logo.png" alt="Logo da barbearia composto por cabelo e barba, ao meio escrito 'Alura'">
-                </a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">home</a></li>
-                    <li><a href="./produto.html">produto</a></li>
-                    <li><a href="./contato.html">contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-
-    <main>
-        <section class="products">
-            <ul class="list-product">
-                <li class="itens-product">
-                    <h2>cabelo</h2>
-                    <img src="../img/imagens/cabelo.jpg" alt="Cabelo preto">
-                    <p>Na tesoura ou máquina, como o cliente preferir</p>
-                    <p class="price">R$ 25,00</p>
-                </li>
-                <li class="itens-product">
-                    <h2>barba</h2>
-                    <img src="../img/imagens/barba.jpg" alt="Barba preto">
-                    <p>Corte e desenho profissional de barba</p>
-                    <p class="price">R$ 18,00</p>
-                </li>
-                <li class="itens-product">
-                    <h2>cabelo + barba</h2>
-                    <img src="../img/imagens/cabelo+barba.jpg" alt="Cabelo e Barba preto">
-                    <p>Pacote completo de cabelo e barba</p>
-                    <p class="price">R$ 35,00</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-
-
-    <footer>
-        <img class="img-footer" src="../img/imagens/logo-branco.png" alt="Logo da barbearia composto por cabelo e barba, ao meio escrito 'Alura'">
-        <p class="copyright">&copy Copyright - Barbearia Alura - 2022</p>
-    </footer>
-
-    <a href="#top" class="botao-top">
-        <div>&#129093</div>
-    </a>
-
-
-</body>
-
+        <footer>
+            <div class="container">
+                <img
+                    class="img-footer"
+                    src="../Public/img/imagens/logo-branco.png"
+                    alt="Logo da barbearia composto por cabelo e barba, ao meio escrito 'Alura'"
+                />
+                <p class="copyright">&copy Copyright - Barbearia Alura - 2022</p>
+            </div>
+        </footer>
+    </body>
 </html>

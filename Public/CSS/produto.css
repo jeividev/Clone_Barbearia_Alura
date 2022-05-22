@@ -1,0 +1,94 @@
+.list-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.list-product .itens-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 20px;
+  margin: 20px 0;
+  width: 260px;
+  height: 400px;
+}
+
+.list-product .itens-product:hover {
+  border-color: #c78c19;
+}
+
+.list-product .itens-product:active {
+  border-color: #088c19;
+}
+
+.list-product .itens-product h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.list-product .itens-product:hover h2 {
+  font-size: 30px;
+}
+
+.list-product .itens-product:active h2 {
+  font-size: 30px;
+  color: #088c19;
+}
+
+.product__description {
+  width: 90%;
+}
+
+.product__description-1::before {
+  background: url("../img/imagens/cabelo.jpg");
+}
+
+.product__description-2::before {
+  background: url("../img/imagens/barba.jpg");
+}
+
+.product__description-3::before {
+  background: url("../img/imagens/cabelo+barba.jpg");
+}
+
+.product__description::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  display: block;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.itens-product:hover .price {
+  font-size: 25px;
+}
+
+@media (min-width: 530px) {
+  .container {
+    max-width: 900px;
+  }
+
+  .list-product {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=produto.css.map */

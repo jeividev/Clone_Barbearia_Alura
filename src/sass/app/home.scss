@@ -1,0 +1,113 @@
+
+$color__background-main: #ccc;
+$color__background-gradient-1: #fff;
+$color__background-gradient-2: $color__background-main;
+$size--max-conteiner: 800px;
+
+body {
+    background: $color__background-main;
+}
+
+figure {
+    width: 100%;
+    max-width: $size--max-conteiner;
+    height: 40vw;
+    max-height: 300px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.img-banner {
+    background-image: url("../img/banner/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+.img-text-paragrafo {
+    display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section .map {
+    width: 90%;
+    height: 40vw;
+    max-height: 300px;
+}
+
+.img-benefits {
+    background-image: url("../img/beneficios/beneficios.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 40vw;
+    max-height: 300px;
+    margin: 0 0 20px;
+    padding: 0;
+    box-shadow: 10px 10px 10px 0px #000;
+}
+
+.video-youtube {
+    height: 40vw;
+    max-height: 300px;
+}
+
+// Gradiente
+
+.background-gradient-before {
+    background: linear-gradient(
+        $color__background-gradient-2,
+        $color__background-gradient-1
+    );
+}
+
+.background-gradient {
+    background: linear-gradient(
+        $color__background-gradient-1,
+        $color__background-gradient-2
+    );
+}
+
+.background-last {
+    background: $color__background-gradient-2;
+}
+
+//Header
+
+@media (min-width: 600px) {
+    #benefits {
+        margin: 15px 0;
+    }
+    .group-benefits {
+        margin: 15px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .group-benefits ul {
+        width: 300px;
+    }
+
+    .group-benefits ul li {
+        margin: 5px 0;
+    }
+
+    .img-benefits {
+        width: 300px;
+        height: 25vw;
+    }
+}
